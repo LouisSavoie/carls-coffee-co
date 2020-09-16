@@ -3,13 +3,15 @@ font-family: 'Josefin Sans', sans-serif; */
 /* #630 */
 
 body {
-    margin: 24px;
+    margin: 0px;
     font-family: 'Josefin Sans', sans-serif;
+    color: white;
 }
 
 .container {
     max-width: 720px;
     margin: 0px auto;
+    padding: 0px 24px;
 }
 
 /* TITLE SECTION */
@@ -18,17 +20,35 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("images/milo-miloezger-rKYRJu0n06Y-unsplash-color.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h1, h2, h3, address {
     font-family: 'Bebas Neue', sans-serif;
+    color: wheat;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 /* MENU SECTION */
 #menu {
     min-height: 400px;
+    padding: 8px 0px 16px 0px;
     display: flex;
     align-items: center;
+    background: rgb(20, 15, 5);
 }
 
 #menu-title, h3 {
@@ -54,13 +74,30 @@ ul {
     min-height: 400px;
     display: flex;
     align-items: center;
+    background-image: url("images/alex-mqyMjCTWJyQ-unsplash-color.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+#about .container {
+    background: rgba(0, 0, 0, .75);
 }
 
 footer {
     text-align: center;
+    background: black;
 }
 
 /* CONTACT SECTION */
+#contact {
+    background: rgb(20, 15, 5);
+}
+
 #addresses {
     min-height: 400px;
     display: flex;
@@ -71,5 +108,14 @@ footer {
 
 footer address {
     padding: 0px 32px;
-    align-self: center;
+}
+
+footer p {
+    margin: 0px;
+    padding: 16px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: wheat;
 }
