@@ -61,7 +61,7 @@ header {
     background-attachment: fixed;
 }
 
-h1, h2, h3, address {
+h1, h2, h3, h4, address {
     font-family: 'Bebas Neue', sans-serif;
     color: wheat;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
@@ -74,6 +74,10 @@ h1 {
 
 h2 {
     font-size: 32px;
+}
+
+h4 {
+    color: white;
 }
 
 /* MENU SECTION */
@@ -122,6 +126,38 @@ ul {
     background: rgba(0, 0, 0, .75);
 }
 
+#staff {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(20, 15, 5);
+    text-align: center;
+}
+
+#staff-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-card {
+    padding: 0px 16px 0px 16px;
+}
+
+.staff-card img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+@media (max-width: 411px) {
+
+    .staff-card img {
+        height: 100px;
+    }
+}
+
 footer {
     text-align: center;
     background: black;
@@ -133,11 +169,19 @@ footer {
 }
 
 #addresses {
-    min-height: 400px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 416px) {
+
+    #addresses {
+        height: 275px;
+    }
+
 }
 
 footer address {
