@@ -48,7 +48,7 @@ body {
     padding: 0px 24px;
 }
 
-/* TITLE SECTION */
+/* HEADER SECTION */
 header {
     height: 400px;
     display: flex;
@@ -59,6 +59,30 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+#topinfo {
+    background: rgb(20, 15, 5);
+}
+
+#topinfo .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#topinfo address {
+    padding: 4px 4px;
+}
+
+#topinfo p {
+    margin: 0px;
+}
+
+#topinfo a {
+    text-decoration: none;
+    color: white;
 }
 
 h1, h2, h3, h4, address {
@@ -195,5 +219,5 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: wheat;
+    color: white;
 }
